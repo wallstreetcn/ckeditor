@@ -49,7 +49,7 @@ function __initHtmlEditorUploader__(uploader,editor) {
 				}, 2000);
 			}
 			if (file.isImage > 0) {
-				editor.insertHtml('<a href="' + file.localUrl + '"><img src="' + file.localUrl + '" alt="' + file.title + '" /></a>');
+				editor.insertHtml('<img src="' + file.localUrl + '" alt="' + file.title + '" />');
 			} else {
 				editor.insertHtml('<a href="' + file.localUrl + '">' + file.fileName + '</a>');
 			}
@@ -87,7 +87,7 @@ CKEDITOR.plugins.add('uploader', {
 			var cn = "." + editor.ui.items["UploaderBtn"].className;
 			$(cn).parent().css("position", "relative");
 			var fileUploader = $('<input type="file" multiple="" class="editor-upload-handle" ' +
-					'data-connect-editor=".editor-content" style="position: absolute;width:32px;height:32px;opacity: 0;-ms-filter: \'alpha(opacity=0)\';font-size: 200px;direction: ltr;cursor: pointer;">');
+					'data-connect-editor=".editor-content" style="position: absolute;width:32px;height:32px;opacity: 0;-ms-filter: \'alpha(opacity=0)\';direction: ltr;cursor: pointer;">');
 			$(cn).after(fileUploader);
 			
 			__initHtmlEditorUploader__(fileUploader,editor);
