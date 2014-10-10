@@ -20,7 +20,7 @@ function __initHtmlEditorUploader__(uploader,editor) {
 	}
 
 	uploader.fileupload({
-		url : '/admin/upload',
+		url : CKEDITOR.config.uploadFileUrl,
 		dataType : 'json',
 		send : function (e, data) {
 			var files = data.files,
