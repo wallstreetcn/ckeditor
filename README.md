@@ -1,5 +1,7 @@
 CKEditor 4
 ==========
+此版本已废弃 最新版本在new-v分支
+版本号：https://github.com/wallstreetcn/ckeditor.git#d160fe3716f05fbe627a381a7c70ef76d9f34336
 
 Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.  
 http://ckeditor.com - See LICENSE.md for license information.
